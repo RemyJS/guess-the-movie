@@ -77,6 +77,8 @@ import errorSound from "@/assets/audio/error.mp3";
 import excellentSound from "@/assets/audio/Quake_3_Excellent_Sound_Effect.mp3";
 import hint1Sound from "@/assets/audio/5050.mp3";
 import getMovies from "../services/movies_service";
+import { BButton, BButtonGroup, BProgress, BSpinner } from 'bootstrap-vue';
+
 
 export default {
   name: "Game",
@@ -96,6 +98,16 @@ export default {
   },
   components: {
     GameOver,
+    BButton,
+    BButtonGroup,
+    BProgress,
+    BSpinner,
+  },
+  directives: {
+    'b-button': BButton,
+    'b-button-group': BButtonGroup,
+    'b-progress': BProgress,
+    'b-spinner': BSpinner,
   },
   computed: {
     ...mapState(["score", "difficulty", "hints", "max"]),

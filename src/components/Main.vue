@@ -17,10 +17,21 @@
 
 <script>
 import { mapMutations } from "vuex";
+import { BCard, BCardText, BButton } from 'bootstrap-vue'
 import prepare from "@/assets/audio/Quake_3_Prepare_to_Fight_Sound_Effect.mp3";
 
 export default {
   name: "Main",
+  components: {
+    BCard,
+    BCardText,
+    BButton,
+  },
+  directives: {
+    'b-card': BCard,
+    'b-card-text': BCardText,
+    'b-button': BButton,
+  },
   methods: {
     ...mapMutations(["setIsGameStart"]),
 
