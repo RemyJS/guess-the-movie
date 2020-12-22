@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { mount, shallowMount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 import Game from "@/components/Game.vue";
 
