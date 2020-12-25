@@ -7,7 +7,7 @@
     class="container text-center"
   >
     <b-card-text>
-      <div>Your result {{ score }}</div>
+      <div class="score">Your result {{ score }}</div>
       <div class="text-warning" v-if="errors != 0">
         You make {{ errors }} errors
       </div>

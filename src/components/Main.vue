@@ -17,7 +17,7 @@
 
 <script>
 import { mapMutations } from "vuex";
-// import prepare from "@/assets/audio/Quake_3_Prepare_to_Fight_Sound_Effect.mp3";
+import prepare from "@/assets/audio/Quake_3_Prepare_to_Fight_Sound_Effect.mp3";
 
 export default {
   name: "Main",
@@ -25,8 +25,8 @@ export default {
     ...mapMutations(["setIsGameStart"]),
 
     startGame() {
-      // let a = new Audio(prepare);
-      // a.play();
+      let a = new Audio(prepare);
+      a.play();
       this.setIsGameStart(true);
     },
   },

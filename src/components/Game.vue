@@ -27,6 +27,7 @@
       </div>
       <b-button-group v-show="hints & !isClicked" size="lg">
         <b-button
+          id="tipBtn"
           pill
           v-b-tooltip.hover
           title="-1 wrong variant"
