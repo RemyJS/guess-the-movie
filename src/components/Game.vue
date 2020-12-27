@@ -171,7 +171,7 @@ export default {
       return Math.floor(Math.random() * 4);
     },
     hint1(e) {
-      if (this.usedHint1) return;
+      if (this.usedHint1) return 'disabled';
       this.usedHint1 = true;
       this.usedHints = true;
       e.target.className = "btn btn-secondary disabled rounded-pill";
